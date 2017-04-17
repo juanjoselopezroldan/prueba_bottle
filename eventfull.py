@@ -29,5 +29,5 @@ def eventfull():
 def server_static(filepath):
 	return static_file(filepath, root='static')
 
-#if __name__ == '__main__':
+if __name__ == '__main__':
 	run(host='0.0.0.0',port=argv[1])
