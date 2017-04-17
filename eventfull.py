@@ -1,3 +1,4 @@
+import bottle
 from bottle import Bottle,route,run,request,template,static_file
 import json
 import os
@@ -29,4 +30,5 @@ def eventfull():
 def server_static(filepath):
 	return static_file(filepath, root='static')
 
-run(host='0.0.0.0', port=arvg[1])
+if __name__ == '__main__':
+	run(host='0.0.0.0',port=argv[1])
