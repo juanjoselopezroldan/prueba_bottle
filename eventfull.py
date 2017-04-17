@@ -1,6 +1,7 @@
 from bottle import Bottle,route,run,request,template,static_file
 import json
 import os
+from sys import arvg
 import requests
 @route('/',method="get")
 def eventfull():
@@ -28,5 +29,4 @@ def eventfull():
 def server_static(filepath):
 	return static_file(filepath, root='static')
 
-
-run(host='localhost', port=8080, debug=True, reloader=True)
+run(host='0.0.0.0', port=arvg[1])
