@@ -2,7 +2,7 @@ import bottle
 from bottle import Bottle,route,run,request,template,static_file
 import json
 import os
-from sys import arvg
+from sys import argv
 import requests
 @route('/',method="get")
 def eventfull():
