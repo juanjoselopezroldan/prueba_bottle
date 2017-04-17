@@ -1,0 +1,6 @@
+bottle
+gunicorn
+json
+sys
+requests
+os
