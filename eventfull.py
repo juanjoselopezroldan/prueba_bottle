@@ -10,7 +10,7 @@ def eventfull():
 def eventfull():
     ciudad = request.forms.get('ciudad')
     tipo = request.forms.get('tipo')
-    a=open("key_eventfull.txt","r")
+    a=open(".key_eventfull.txt","r")
     key=a.readline()
     payload={"app_key":key, "location": ciudad, "keywords":tipo}
     r=requests.get("http://api.eventful.com/json/events/search?keywords="+tipo+"&location="+ciudad+"&app_key="+key)
